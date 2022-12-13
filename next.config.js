@@ -1,4 +1,10 @@
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  env: {
+    VERCEL_ENV: process.env.VERCEL_ENV || "preview",
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
@@ -21,3 +27,5 @@ module.exports = {
     ];
   },
 };
+
+module.exports = nextConfig;
