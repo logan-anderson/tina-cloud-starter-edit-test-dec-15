@@ -3,8 +3,10 @@ import { Container } from "../util/container";
 import { Section } from "../util/section";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { TinaTemplate } from "tinacms";
+import useEditData from "../../util";
 
 export const Content = ({ data, parentField = "" }) => {
+  const vercelField = useEditData();
   return (
     <Section color={data.color}>
       <Container
@@ -12,6 +14,7 @@ export const Content = ({ data, parentField = "" }) => {
           data.color === "primary" ? `prose-primary` : `dark:prose-dark`
         }`}
         data-tinafield={`${parentField}.body`}
+        data-vercel-edit-info={vercelField(`${parentField}.body`)}
         size="large"
         width="medium"
       >

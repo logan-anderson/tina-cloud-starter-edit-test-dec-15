@@ -19,6 +19,7 @@ import format from "date-fns/format";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Prism } from "tinacms/dist/rich-text/prism";
 import type { TinaMarkdownContent, Components } from "tinacms/dist/rich-text";
+import useEditData from "../../util";
 
 const components: Components<{
   BlockQuote: {
@@ -112,6 +113,7 @@ const components: Components<{
 
 export const Post = (props) => {
   const theme = useTheme();
+  const vercelField = useEditData();
 
   const titleColorClasses = {
     blue: "from-blue-400 to-blue-600 dark:from-blue-300 dark:to-blue-500",
@@ -137,7 +139,7 @@ export const Post = (props) => {
     <Section className="flex-1">
       <Container width="small" className={`flex-1 pb-2`} size="large">
         <h2
-          data-vercel-edit-info="title"
+          data-vercel-edit-info={vercelField("title")}
           data-tinafield="title"
           className={`w-full relative	mb-8 text-6xl font-extrabold tracking-normal text-center title-font`}
         >
@@ -151,7 +153,7 @@ export const Post = (props) => {
         </h2>
         <div
           data-tinafield="author"
-          data-vercel-edit-info="title"
+          data-vercel-edit-info={vercelField("author")}
           className="flex items-center justify-center mb-16"
         >
           {props.author && (

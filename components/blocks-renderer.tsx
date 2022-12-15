@@ -17,6 +17,7 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                 return (
                   <div
                     data-tinafield={`blocks.${i}`}
+                    data-vercel-edit-info={vercelField(`blocks.${i}`)}
                     key={i + block.__typename}
                   >
                     <Content data={block} parentField={`blocks.${i}`} />
@@ -26,6 +27,7 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                 return (
                   <div
                     data-tinafield={`blocks.${i}`}
+                    data-vercel-edit-info={vercelField(`blocks.${i}`)}
                     key={i + block.__typename}
                   >
                     <Hero data={block} parentField={`blocks.${i}`} />
@@ -35,6 +37,7 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                 return (
                   <div
                     data-tinafield={`blocks.${i}`}
+                    data-vercel-edit-info={vercelField(`blocks.${i}`)}
                     key={i + block.__typename}
                   >
                     <Features data={block} parentField={`blocks.${i}`} />
@@ -44,6 +47,7 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                 return (
                   <div
                     data-tinafield={`blocks.${i}`}
+                    data-vercel-edit-info={vercelField(`blocks.${i}`)}
                     key={i + block.__typename}
                   >
                     <Testimonial data={block} parentField={`blocks.${i}`} />
