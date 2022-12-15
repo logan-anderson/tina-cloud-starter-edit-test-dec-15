@@ -2478,10 +2478,10 @@
   resolved "https://registry.yarnpkg.com/@tinacms/sharedctx/-/sharedctx-1.0.0.tgz#1859cb2ea224f14457a50fb2c5e7ed04ef1920f3"
   integrity sha512-I7lobex7bAAuh4ouFV0ZYSNzuNC39SJowqS2BU53bca5qcUH1I1b8lmVYzB4zBmZlsqRU/FKmjmdWYzWbkmvwA==
 
-"@tinacms/toolkit@0.0.0-20221215133340":
-  version "0.0.0-20221215133340"
-  resolved "https://registry.yarnpkg.com/@tinacms/toolkit/-/toolkit-0.0.0-20221215133340.tgz#439edc3049dd819d4f2e58afd3ec33f94b9ea295"
-  integrity sha512-J2Fjfok4SOpCa70ylKOUi57liK6oKLyF3x0T99WwLaEP+Irys46V7GylutZ4w1zKfTf6jXlxUZIy+MQOeqo0ig==
+"@tinacms/toolkit@0.0.0-20221215140757":
+  version "0.0.0-20221215140757"
+  resolved "https://registry.yarnpkg.com/@tinacms/toolkit/-/toolkit-0.0.0-20221215140757.tgz#c75a3da985b380b27c0d8513fb9b145734445498"
+  integrity sha512-1aylwcA4JdBE9n3ylpemWoF933tqzXwWlOy2xEhNFVX/9Wbi2ooCmIZG/ak49wdwc02Bwex3Kr4V2dNdTNXiTw==
   dependencies:
     "@floating-ui/dom" "^0.1.7"
     "@floating-ui/react-dom" "^0.3.3"
@@ -9248,10 +9248,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-tinacms@0.0.0-20221215133340:
-  version "0.0.0-20221215133340"
-  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-0.0.0-20221215133340.tgz#bd632ea36655d6b9d31d0f8a6c384a5b36a9334c"
-  integrity sha512-L1v0EgZC6vcH22gYxZ4XZ52cM5keMhLdMvPeKyeL/IOjodxmcji1G2vbHyQdYa2qByHoL+WfH3Fzrfk+CiUYJg==
+tinacms@0.0.0-20221215140757:
+  version "0.0.0-20221215140757"
+  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-0.0.0-20221215140757.tgz#781388de9f7bfbad9e07dc595fd1c1ea408bf8fa"
+  integrity sha512-L2AAJ9MiiUMt9ZGJBGe4bJe5wY4l2u+q59iuu+p1WRTFyvV85VY9QtHbkr/W0EQjCyjlHnjIncqAv2khFb8t4w==
   dependencies:
     "@graphql-tools/relay-operation-optimizer" "^6.4.1"
     "@headlessui/react" "^1.5.0"
@@ -9259,7 +9259,7 @@ tinacms@0.0.0-20221215133340:
     "@react-hook/window-size" "^3.0.7"
     "@tinacms/schema-tools" "1.0.3"
     "@tinacms/sharedctx" "1.0.0"
-    "@tinacms/toolkit" "0.0.0-20221215133340"
+    "@tinacms/toolkit" "0.0.0-20221215140757"
     crypto-js "^4.0.0"
     encoding "0.1.13"
     fetch-ponyfill "^7.1.0"
