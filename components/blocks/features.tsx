@@ -10,13 +10,14 @@ export const Feature = ({ featuresColor, data, tinaField }) => {
   return (
     <div
       data-tinafield={tinaField}
-      // data-vercel-edit-info={vercelField(tinaField)}
+      data-vercel-edit-info={vercelField(tinaField)}
       className="flex-1 flex flex-col gap-6 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto"
       style={{ flexBasis: "16rem" }}
     >
       {data.icon && (
         <Icon
           tinaField={`${tinaField}.icon`}
+          data-vercel-edit-info={vercelField(`${tinaField}.icon`)}
           parentColor={featuresColor}
           data={{ size: "large", ...data.icon }}
         />
@@ -24,6 +25,7 @@ export const Feature = ({ featuresColor, data, tinaField }) => {
       {data.title && (
         <h3
           data-tinafield={`${tinaField}.title`}
+          data-vercel-edit-info={vercelField(`${tinaField}.title`)}
           className="text-2xl font-semibold title-font"
         >
           {data.title}
@@ -32,6 +34,7 @@ export const Feature = ({ featuresColor, data, tinaField }) => {
       {data.text && (
         <p
           data-tinafield={`${tinaField}.text`}
+          data-vercel-edit-info={vercelField(`${tinaField}.text`)}
           className="text-base opacity-80 leading-relaxed"
         >
           {data.text}

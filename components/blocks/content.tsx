@@ -14,7 +14,7 @@ export const Content = ({ data, parentField = "" }) => {
           data.color === "primary" ? `prose-primary` : `dark:prose-dark`
         }`}
         data-tinafield={`${parentField}.body`}
-        // data-vercel-edit-info={vercelField(`${parentField}.body`)}
+        data-vercel-edit-info={vercelField(`${parentField}.body`)}
         size="large"
         width="medium"
       >
