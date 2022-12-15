@@ -168,8 +168,12 @@ const FakeVercelWidget = () => {
 const App = ({ Component, pageProps }) => {
   return (
     <>
-      <FakeVercelWidget />
+      {/* <FakeVercelWidget /> */}
       <Component {...pageProps} />
+      <script
+        src="https://vercel-live-git-hackathon2022.vercel.sh/_next-live/feedback/feedback.js"
+        async
+      ></script>
     </>
   );
 };
