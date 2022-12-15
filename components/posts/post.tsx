@@ -140,10 +140,10 @@ export const Post = (props) => {
       <Container width="small" className={`flex-1 pb-2`} size="large">
         <h2
           data-tinafield="title"
-          data-vercel-edit-info={vercelField("title")}
           className={`w-full relative	mb-8 text-6xl font-extrabold tracking-normal text-center title-font`}
         >
           <span
+            data-vercel-edit-info={vercelField("title")}
             className={`bg-clip-text text-transparent bg-gradient-to-r ${
               titleColorClasses[theme.color]
             }`}
@@ -153,7 +153,6 @@ export const Post = (props) => {
         </h2>
         <div
           data-tinafield="author"
-          data-vercel-edit-info={vercelField("author")}
           className="flex items-center justify-center mb-16"
         >
           {props.author && (
@@ -165,7 +164,10 @@ export const Post = (props) => {
                   alt={props.author.name}
                 />
               </div>
-              <p className="text-base font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white">
+              <p
+                data-vercel-edit-info={vercelField("author")}
+                className="text-base font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white"
+              >
                 {props.author.name}
               </p>
               <span className="font-bold text-gray-200 dark:text-gray-500 mx-2">
@@ -186,10 +188,10 @@ export const Post = (props) => {
         <div className="px-4 w-full">
           <div
             data-tinafield="heroImg"
-            data-vercel-edit-info={vercelField("heroImg")}
             className="relative max-w-4xl lg:max-w-5xl mx-auto"
           >
             <img
+              data-vercel-edit-info={vercelField("heroImg")}
               src={props.heroImg}
               className="absolute block rounded-lg w-full h-auto blur-2xl brightness-150 contrast-[0.9] dark:brightness-150 saturate-200 opacity-50 dark:opacity-30 mix-blend-multiply dark:mix-blend-hard-light"
               aria-hidden="true"
