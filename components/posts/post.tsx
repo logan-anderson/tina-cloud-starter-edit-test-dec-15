@@ -191,7 +191,7 @@ export const Post = (props) => {
             className="relative max-w-4xl lg:max-w-5xl mx-auto"
           >
             <img
-              data-vercel-edit-info={vercelField("heroImg")}
+              // data-vercel-edit-info={vercelField("heroImg")}
               src={props.heroImg}
               className="absolute block rounded-lg w-full h-auto blur-2xl brightness-150 contrast-[0.9] dark:brightness-150 saturate-200 opacity-50 dark:opacity-30 mix-blend-multiply dark:mix-blend-hard-light"
               aria-hidden="true"
