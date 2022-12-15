@@ -213,6 +213,7 @@ export const Post = (props) => {
               aria-hidden="true"
             />
             <img
+              data-vercel-edit-info={vercelField("heroImg")}
               src={props.heroImg}
               alt={props.title}
               className="relative z-10 mb-14 block rounded-lg w-full h-auto opacity-100"
