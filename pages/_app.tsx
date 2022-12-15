@@ -98,10 +98,9 @@ const FakeVercelWidget = () => {
             <img
               data-version="v1"
               alt=""
-              class="image_intrinsic__85bgY avatar_ready__X97MY"
+              className="image_intrinsic__85bgY avatar_ready__X97MY"
               decoding="async"
               height="20"
-              importance="low"
               loading="lazy"
               title=""
               width="20"
@@ -112,10 +111,9 @@ const FakeVercelWidget = () => {
             <img
               data-version="v1"
               alt=""
-              class="image_intrinsic__85bgY avatar_ready__X97MY"
+              className="image_intrinsic__85bgY avatar_ready__X97MY"
               decoding="async"
               height="20"
-              importance="low"
               loading="lazy"
               title=""
               width="20"
