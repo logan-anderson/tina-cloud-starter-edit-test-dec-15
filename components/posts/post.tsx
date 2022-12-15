@@ -112,7 +112,11 @@ const components: Components<{
         data-vercel-edit-info={vercelField("body")}
         className="flex items-center justify-center"
       >
-        <img src={props.url} alt={props.alt} />
+        <img
+          data-vercel-edit-info={vercelField("body")}
+          src={props.url}
+          alt={props.alt}
+        />
       </div>
     );
   },
@@ -169,6 +173,7 @@ export const Post = (props) => {
                 data-vercel-edit-info={vercelField("author")}
               >
                 <img
+                  data-vercel-edit-info={vercelField("author")}
                   className="h-14 w-14 object-cover rounded-full shadow-sm"
                   src={props.author.avatar}
                   alt={props.author.name}
@@ -202,7 +207,7 @@ export const Post = (props) => {
             data-vercel-edit-info={vercelField("heroImg")}
           >
             <img
-              // data-vercel-edit-info={vercelField("heroImg")}
+              data-vercel-edit-info={vercelField("heroImg")}
               src={props.heroImg}
               className="absolute block rounded-lg w-full h-auto blur-2xl brightness-150 contrast-[0.9] dark:brightness-150 saturate-200 opacity-50 dark:opacity-30 mix-blend-multiply dark:mix-blend-hard-light"
               aria-hidden="true"
