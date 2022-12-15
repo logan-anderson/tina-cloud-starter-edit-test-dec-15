@@ -41,10 +41,10 @@ export const Hero = ({ data, parentField }) => {
           {data.headline && (
             <h3
               data-tinafield={`${parentField}.headline`}
-              data-vercel-edit-info={vercelField(`${parentField}.headline`)}
               className={`w-full relative	mb-10 text-5xl font-extrabold tracking-normal leading-tight title-font`}
             >
               <span
+                data-vercel-edit-info={vercelField(`${parentField}.headline`)}
                 className={`bg-clip-text text-transparent bg-gradient-to-r  ${
                   data.color === "primary"
                     ? `from-white to-gray-100`
@@ -57,13 +57,19 @@ export const Hero = ({ data, parentField }) => {
           )}
           {data.text && (
             <div
-              data-tinafield={`${parentField}.text`}
-              data-vercel-edit-info={vercelField(`${parentField}.text`)}
+              // data-vercel-edit-info={vercelField(`${parentField}.text`)}
               className={`prose prose-lg mx-auto lg:mx-0 mb-10 ${
                 data.color === "primary" ? `prose-primary` : `dark:prose-dark`
               }`}
             >
-              <TinaMarkdown content={data.text} />
+              <TinaMarkdown
+                content={data.text}
+                components={{
+                  p: (props) => (
+                    <p data-tinafield={`${parentField}.text`} {...props} />
+                  ),
+                }}
+              />
             </div>
           )}
           {data.actions && (

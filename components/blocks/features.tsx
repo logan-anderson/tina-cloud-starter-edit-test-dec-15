@@ -10,7 +10,7 @@ export const Feature = ({ featuresColor, data, tinaField }) => {
   return (
     <div
       data-tinafield={tinaField}
-      data-vercel-edit-info={vercelField(tinaField)}
+      // data-vercel-edit-info={vercelField(tinaField)}
       className="flex-1 flex flex-col gap-6 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto"
       style={{ flexBasis: "16rem" }}
     >

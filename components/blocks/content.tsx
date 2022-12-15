@@ -14,11 +14,21 @@ export const Content = ({ data, parentField = "" }) => {
           data.color === "primary" ? `prose-primary` : `dark:prose-dark`
         }`}
         data-tinafield={`${parentField}.body`}
-        data-vercel-edit-info={vercelField(`${parentField}.body`)}
+        // data-vercel-edit-info={vercelField(`${parentField}.body`)}
         size="large"
         width="medium"
       >
-        <TinaMarkdown content={data.body} />
+        <TinaMarkdown
+          content={data.body}
+          components={{
+            p: (props) => (
+              <p
+                data-vercel-edit-info={vercelField(`${parentField}.body`)}
+                {...props}
+              />
+            ),
+          }}
+        />
       </Container>
     </Section>
   );
