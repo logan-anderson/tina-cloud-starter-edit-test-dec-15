@@ -2,8 +2,10 @@ import React from "react";
 import { Container } from "../util/container";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
+import useEditData from "../../util";
 
 export const Testimonial = ({ data, parentField = "" }) => {
+  const vercelField = useEditData();
   return (
     <Section color={data.color}>
       <Container size="large">
@@ -22,6 +24,7 @@ export const Testimonial = ({ data, parentField = "" }) => {
             </span>
             <p
               data-tinafield={`${parentField}.quote`}
+              data-vercel-edit-info={vercelField(`${parentField}.quote`)}
               className="relative opacity-95"
             >
               {data.quote}
@@ -44,6 +47,7 @@ export const Testimonial = ({ data, parentField = "" }) => {
           <footer className="text-center">
             <p
               data-tinafield={`${parentField}.author`}
+              data-vercel-edit-info={vercelField(`${parentField}.author`)}
               className={`tracking-wide title-font font-bold text-lg ${
                 data.color === "primary"
                   ? `text-blue-200`

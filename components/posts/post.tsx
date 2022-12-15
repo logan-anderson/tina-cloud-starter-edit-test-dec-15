@@ -139,8 +139,8 @@ export const Post = (props) => {
     <Section className="flex-1">
       <Container width="small" className={`flex-1 pb-2`} size="large">
         <h2
-          data-vercel-edit-info={vercelField("title")}
           data-tinafield="title"
+          data-vercel-edit-info={vercelField("title")}
           className={`w-full relative	mb-8 text-6xl font-extrabold tracking-normal text-center title-font`}
         >
           <span
@@ -175,6 +175,7 @@ export const Post = (props) => {
           )}
           <p
             data-tinafield="date"
+            data-vercel-edit-info={vercelField("date")}
             className="text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150"
           >
             {formattedDate}
@@ -185,6 +186,7 @@ export const Post = (props) => {
         <div className="px-4 w-full">
           <div
             data-tinafield="heroImg"
+            data-vercel-edit-info={vercelField("heroImg")}
             className="relative max-w-4xl lg:max-w-5xl mx-auto"
           >
             <img
