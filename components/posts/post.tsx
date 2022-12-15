@@ -112,6 +112,7 @@ const components: Components<{
 
 export const Post = (props) => {
   const theme = useTheme();
+
   const titleColorClasses = {
     blue: "from-blue-400 to-blue-600 dark:from-blue-300 dark:to-blue-500",
     teal: "from-teal-400 to-teal-600 dark:from-teal-300 dark:to-teal-500",
@@ -136,6 +137,7 @@ export const Post = (props) => {
     <Section className="flex-1">
       <Container width="small" className={`flex-1 pb-2`} size="large">
         <h2
+          data-vercel-edit-info="title"
           data-tinafield="title"
           className={`w-full relative	mb-8 text-6xl font-extrabold tracking-normal text-center title-font`}
         >
@@ -149,6 +151,7 @@ export const Post = (props) => {
         </h2>
         <div
           data-tinafield="author"
+          data-vercel-edit-info="title"
           className="flex items-center justify-center mb-16"
         >
           {props.author && (

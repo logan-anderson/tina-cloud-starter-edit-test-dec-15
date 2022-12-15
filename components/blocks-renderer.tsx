@@ -1,4 +1,5 @@
 import React from "react";
+import useEditData from "../util";
 import type { Page } from "../.tina/__generated__/types";
 import { Content } from "./blocks/content";
 import { Features } from "./blocks/features";
@@ -6,6 +7,7 @@ import { Hero } from "./blocks/hero";
 import { Testimonial } from "./blocks/testimonial";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
+  const vercelField = useEditData();
   return (
     <>
       {props.blocks
