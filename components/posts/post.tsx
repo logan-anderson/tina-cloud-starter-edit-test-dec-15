@@ -104,11 +104,18 @@ const components: Components<{
       </div>
     );
   },
-  img: (props) => (
-    <div className="flex items-center justify-center">
-      <img src={props.url} alt={props.alt} />
-    </div>
-  ),
+  img: (props) => {
+    const vercelField = useEditData();
+    return (
+      <div
+        // It seems like all divs that wrap images need to have data-vercel-edit-info or everything crashes
+        data-vercel-edit-info={vercelField("body")}
+        className="flex items-center justify-center"
+      >
+        <img src={props.url} alt={props.alt} />
+      </div>
+    );
+  },
 };
 
 export const Post = (props) => {
@@ -157,7 +164,10 @@ export const Post = (props) => {
         >
           {props.author && (
             <>
-              <div className="flex-shrink-0 mr-4">
+              <div
+                className="flex-shrink-0 mr-4"
+                data-vercel-edit-info={vercelField("author")}
+              >
                 <img
                   className="h-14 w-14 object-cover rounded-full shadow-sm"
                   src={props.author.avatar}
@@ -189,6 +199,7 @@ export const Post = (props) => {
           <div
             data-tinafield="heroImg"
             className="relative max-w-4xl lg:max-w-5xl mx-auto"
+            data-vercel-edit-info={vercelField("heroImg")}
           >
             <img
               // data-vercel-edit-info={vercelField("heroImg")}
