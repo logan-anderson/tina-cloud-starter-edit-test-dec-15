@@ -170,14 +170,14 @@ const App = ({ Component, pageProps }) => {
     <>
       {/* <FakeVercelWidget /> */}
       <Component {...pageProps} />
-      {/* <script
+      <script
         src="https://vercel-live-git-hackathon2022.vercel.sh/_next-live/feedback/feedback.js"
         async
-      ></script> */}
-      <script
+      ></script>
+      {/* <script
         src="https://vercel-live-git-tina-same-tab.vercel.sh/_next-live/feedback/feedback.js"
         async
-      ></script>
+      ></script> */}
     </>
   );
 };
